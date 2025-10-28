@@ -1,0 +1,44 @@
+﻿@model Web_MehrTabellen.Model.Artikels
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Artikel bearbeiten</title>
+</head>
+
+<body>
+<h2>Artikel bearbeiten</h2>
+
+
+
+<form asp-action="EditArtikel" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="AID" value="@Model.AID" />
+    <div>
+        <label>Bezeichnung</label>
+        <input name="Bezeichnung" value="@Model.Bezeichnung" />
+    </div>
+    <div>
+        <label>Preis</label>
+        <input name="Preis" type="number" step="0.01" value="@Model.Preis" />
+    </div>
+    <div>
+        <label>Kategorie</label>
+        <select name="KID">
+            <option value="0">-- bitte wählen --</option>
+            @foreach (var k in (ViewBag.Kategorien as List<Web_MehrTabellen.Model.Kategorien>))
+            {
+                <option value="@k.KID" @(k.KID == Model.KID ? "selected" : "")>@k.Bezeichnung</option>
+            }
+        </select>
+    </div>
+    <button type="submit">Speichern</button>
+    <a asp-action="Index">Abbrechen</a>
+</form>
+
+</body>
+</html>

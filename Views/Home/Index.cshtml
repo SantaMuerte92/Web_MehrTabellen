@@ -1,0 +1,131 @@
+﻿@model Web_MehrTabellen.Model.ViewModels.HomeIndexViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        body { font-family: Segoe UI, Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #f2f2f2; }
+        select { padding: 6px; }
+    </style>
+</head>
+<body>
+    <h2>Artikel</h2>
+
+    <form method="get" asp-controller="Home" asp-action="Index">
+        <label for="kat">Kategorie:</label>
+        <select id="kat" name="kat" onchange="this.form.submit()">
+            <option value="0" @(Model.SelectedKID == 0 ? "selected" : "")>Alle</option>
+            @foreach (var k in Model.Kategorien)
+            {
+                <option value="@k.KID" @(Model.SelectedKID == k.KID ? "selected" : "")>@k.Bezeichnung</option>
+            }
+        </select>
+        <noscript>
+            <button type="submit">Filtern</button>
+        </noscript>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>AID</th>
+                <th>Bezeichnung</th>
+                <th>Preis</th>
+                <th>KID</th>
+                <th>Aktion</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Artikel?.Any() ?? false)
+            {
+                foreach (var a in Model.Artikel)
+                {
+                    <tr>
+                        <td>@a.AID</td>
+                        <td>@a.Bezeichnung</td>
+                        <td>@a.Preis.ToString("C")</td>
+                        <td>@a.KID</td>
+                        <td>
+                            <form asp-action="EditArtikel" method="get" style="display:inline;">
+                                <input type="hidden" name="id" value="@a.AID" />
+                                <button type="submit" class="btn">Artikel bearbeiten</button>
+                            </form>            
+                            
+                            <form asp-action="DeleteArtikel" method="post" style="display:inline;">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@a.AID" />
+                                <button type="submit" class="btn" onclick="return confirm('Artikel wirklich löschen?');">Artikel Löschen</button>
+                            </form>
+                            
+                        </td>
+                                                                           </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5">Keine Artikel vorhanden.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <br />
+    <form asp-action="CreateArtikel" method="get" style="display:inline;">
+        <button type="submit" class="btn">Neuen Artikel Anlegen</button>
+    </form>
+    <br />
+    <br />
+    <h2>Kategorien</h2>
+
+       <table>
+        <thead>
+            <tr>
+                <th>KID</th>
+                <th>Bezeichnung</th>
+                               <th>Aktion</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Kategorien?.Any() ?? false)
+            {
+                foreach (var a in Model.Kategorien)
+                {
+                    <tr>
+                        <td>@a.KID</td>
+                        <td>@a.Bezeichnung</td>
+                                             <td>
+                            <form asp-action="EditKategorie" method="get" style="display:inline;">
+                                <input type="hidden" name="id" value="@a.KID" />
+                                <button type="submit" class="btn">Kategorie bearbeiten</button>
+                            </form>
+
+                            <form asp-action="DeleteKategorie" method="post" style="display:inline;">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@a.KID" />
+                                <button type="submit" class="btn" onclick="return confirm('Kategorie wirklich löschen?');">Kategorie Löschen</button>
+                            </form>
+
+                        </td>
+
+                    </tr>
+                }
+            }
+          
+        </tbody>
+    </table>
+    <br />
+    <form asp-action="CreateKategorie" method="get" style="display:inline;">
+        <button type="submit" class="btn">Neue Kategorie anlegen</button>
+    </form>
+
+</body>
+</html>

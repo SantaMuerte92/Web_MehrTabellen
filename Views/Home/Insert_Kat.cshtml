@@ -1,0 +1,15 @@
+﻿@model Web_MehrTabellen.Model.Kategorien
+@{
+    Layout = null;
+}
+<h2>Neue Kategorie anlegen</h2>
+
+<form asp-action="CreateKategorie" method="post">
+    @Html.AntiForgeryToken()
+    <div>
+        <label>Bezeichnung</label>
+        <input name="Bezeichnung" value="@Model?.Bezeichnung" />
+    </div>
+    <button type="submit">Speichern</button>
+    <a asp-action="Index">Abbrechen</a>
+</form>
