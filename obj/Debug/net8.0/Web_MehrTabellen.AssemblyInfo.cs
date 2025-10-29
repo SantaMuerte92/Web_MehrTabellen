@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Web_MehrTabellen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f42335a5205ee5ba4d89b90a9cbd6d21acbd5bee")]
 [assembly: System.Reflection.AssemblyProductAttribute("Web_MehrTabellen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Web_MehrTabellen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

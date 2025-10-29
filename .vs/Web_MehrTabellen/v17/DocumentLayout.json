@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{A896A424-BCBF-46FC-B405-1999D95D44CA}|Web_MehrTabellen.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A896A424-BCBF-46FC-B405-1999D95D44CA}|Web_MehrTabellen.csproj|c:\\users\\fia\\projekte\\web_mehrtabellen\\views\\home\\insert_kat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A896A424-BCBF-46FC-B405-1999D95D44CA}|Web_MehrTabellen.csproj|solutionrelative:views\\home\\insert_kat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A896A424-BCBF-46FC-B405-1999D95D44CA}|Web_MehrTabellen.csproj|c:\\users\\fia\\projekte\\web_mehrtabellen\\model\\kategorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A896A424-BCBF-46FC-B405-1999D95D44CA}|Web_MehrTabellen.csproj|solutionrelative:model\\kategorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A896A424-BCBF-46FC-B405-1999D95D44CA}|Web_MehrTabellen.csproj|c:\\users\\fia\\projekte\\web_mehrtabellen\\views\\home\\update_art.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A896A424-BCBF-46FC-B405-1999D95D44CA}|Web_MehrTabellen.csproj|solutionrelative:views\\home\\update_art.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A896A424-BCBF-46FC-B405-1999D95D44CA}|Web_MehrTabellen.csproj|c:\\users\\fia\\projekte\\web_mehrtabellen\\views\\home\\insert_kat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A896A424-BCBF-46FC-B405-1999D95D44CA}|Web_MehrTabellen.csproj|solutionrelative:views\\home\\insert_kat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A896A424-BCBF-46FC-B405-1999D95D44CA}|Web_MehrTabellen.csproj|c:\\users\\fia\\projekte\\web_mehrtabellen\\views\\home\\update_kat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -46,15 +46,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Update_Art.cshtml",
-              "DocumentMoniker": "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\Views\\Home\\Update_Art.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Update_Art.cshtml",
-              "ToolTip": "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\Views\\Home\\Update_Art.cshtml",
-              "RelativeToolTip": "Views\\Home\\Update_Art.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T12:37:45.768Z",
+              "DocumentIndex": 2,
+              "Title": "Kategorie.cs",
+              "DocumentMoniker": "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\Model\\Kategorie.cs",
+              "RelativeDocumentMoniker": "Model\\Kategorie.cs",
+              "ToolTip": "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\Model\\Kategorie.cs",
+              "RelativeToolTip": "Model\\Kategorie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:54:52.506Z",
               "EditorCaption": ""
             },
             {
@@ -67,8 +67,7 @@
               "RelativeToolTip": "Views\\Home\\Update_Kat.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T12:37:32.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T12:37:32.588Z"
             },
             {
               "$type": "Document",
@@ -80,12 +79,11 @@
               "RelativeToolTip": "Views\\Home\\Insert_Art.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T12:37:03.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T12:37:03.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Insert_Kat.cshtml",
               "DocumentMoniker": "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\Views\\Home\\Insert_Kat.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Insert_Kat.cshtml",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "Views\\Home\\Insert_Kat.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-28T12:36:20.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T12:36:20.99Z"
             },
             {
               "$type": "Document",
@@ -104,7 +101,7 @@
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwCsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T09:11:01.632Z",
               "EditorCaption": ""
@@ -117,7 +114,7 @@
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAADEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-28T08:58:24.156Z",
               "EditorCaption": ""

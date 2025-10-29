@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\Web_MehrTabellen.csproj": {}
+    "C:\\Users\\FIA\\Projekte\\Web_mehrtabellen\\Web_MehrTabellen.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\Web_MehrTabellen.csproj": {
+    "C:\\Users\\FIA\\Projekte\\Web_mehrtabellen\\Web_MehrTabellen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\Web_MehrTabellen.csproj",
+        "projectUniqueName": "C:\\Users\\FIA\\Projekte\\Web_mehrtabellen\\Web_MehrTabellen.csproj",
         "projectName": "Web_MehrTabellen",
-        "projectPath": "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\Web_MehrTabellen.csproj",
+        "projectPath": "C:\\Users\\FIA\\Projekte\\Web_mehrtabellen\\Web_MehrTabellen.csproj",
         "packagesPath": "C:\\Users\\FIA\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\FIA\\Projekte\\Web_MehrTabellen\\obj\\",
         "projectStyle": "PackageReference",
